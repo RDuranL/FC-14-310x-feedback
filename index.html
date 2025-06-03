@@ -42,7 +42,14 @@
 
   <header>
     <h1>📘 14.310x Flipped Classroom materials: full compile</h1>
-    <p>Last updated: [date] [time] </p>
+   <p id="last-updated">Last updated: loading…</p>
+<script>
+  fetch("assets/docs/last-updated.txt")
+    .then(res => res.text())
+    .then(text => {
+      document.getElementById("last-updated").textContent = "Last updated: " + text;
+    });
+</script>
   </header>
 
   <div class="button-container">
