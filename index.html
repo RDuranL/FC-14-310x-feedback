@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>14.310x Flipped Classroom most up-to-date materials</title>
+  <title>14.310x Flipped Classroom Materials</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: #0d3b66;
+      color: white;
+      padding: 1em 2em;
+      text-align: center;
+    }
+    .button-container {
+      text-align: center;
+      margin: 1em;
+    }
+    .download-button {
+      background-color: #0066cc;
+      color: white;
+      padding: 0.6em 1.2em;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.2s ease;
+    }
+    .download-button:hover {
+      background-color: #004999;
+    }
+    iframe {
+      width: 100%;
+      height: 90vh;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Single full document</h1>
-  <p>You can view or download the latest version below:</p>
-  <a href="main.pdf" target="_blank">📄 View PDF</a>
+
+  <header>
+    <h1>📘 Most up-to-date version</h1>
+    <p>version name TBA</p>
+  </header>
+
+  <div class="button-container">
+    <a class="download-button" href="pdf/instructions-v1.pdf" download>
+      ⬇ Download PDF
+    </a>
+  </div>
+
+  <iframe src="main.pdf"></iframe>
+
 </body>
 </html>
